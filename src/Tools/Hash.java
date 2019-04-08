@@ -10,7 +10,7 @@ public class Hash {
 		
 		if (text != null && text.length() > 0) {
 			try {
-				MessageDigest messageDigest = MessageDigest.getInstance("SHA256");
+				MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
 				messageDigest.update(text.getBytes());
 				byteBuffer = messageDigest.digest();
 			} catch (NoSuchAlgorithmException e) {
